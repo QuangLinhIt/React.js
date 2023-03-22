@@ -1,0 +1,104 @@
+.section-OutStandingDoctor {
+    height: 330px;
+    background: #eff2f2;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0.1));
+
+    .OutStandingDoctor-container {
+        margin: 0 51px;
+        display: flex;
+        flex-direction: column;
+
+        .OutStandingDoctor-header {
+            height: 60px;
+            margin-bottom: 30px;
+            padding-top: 30px;
+
+            .title-section {
+                font-size: 22px;
+                font-weight: 600;
+            }
+
+            .btn-section {
+                font-size: 11px;
+                float: right;
+                display: block;
+                padding: 10px 15px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                background: #ebebeb;
+                color: black;
+                text-transform: uppercase;
+
+                &:hover {
+                    color: #fff;
+                    background: #f7d800;
+                }
+            }
+        }
+
+        .OutStandingDoctor-body {
+
+            .OutStandingDoctor-customize {
+
+                .bg-image {
+                    width: 278px;
+                    height: 150px;
+                    margin-bottom: 20px;
+                    border: 2px solid gray;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+
+                    &.edit-image {
+                        width: 120px;
+                        height: 120px;
+                        border-radius: 50%;
+                        margin-left: 85px;
+                    }
+                }
+
+                .text-center {
+                    text-align: center;
+                }
+
+            }
+
+            //reset slick slider css
+            .slick-prev {
+                left: -23px;
+                z-index: 1000;
+                height: 48px;
+                width: 44px;
+                background: #fff;
+                border: 2px solid rgb(66, 209, 23);
+            }
+
+            .slick-prev::before {
+                font-family: FontAwesome;
+                color: rgb(66, 209, 23);
+                font-size: 30px;
+            }
+
+            .slick-next {
+                right: -15px;
+                z-index: 1000;
+                height: 48px;
+                width: 44px;
+                background: #fff;
+                border: 2px solid rgb(66, 209, 23);
+            }
+
+            .slick-next::before {
+                font-family: FontAwesome;
+                color: rgb(66, 209, 23);
+                font-size: 30px;
+            }
+
+            .slick-disabled {
+                display: none !important;
+            }
+
+        }
+    }
+}

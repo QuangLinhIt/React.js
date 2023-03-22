@@ -1,0 +1,157 @@
+.section-medical-facility {
+    height: 330px;
+    background: white;
+
+    .medical-facility-container {
+        margin: 0 51px;
+        display: flex;
+        flex-direction: column;
+
+        .medical-facility-header {
+            height: 60px;
+            margin-bottom: 30px;
+            padding-top: 30px;
+
+            .title-section {
+                font-size: 22px;
+                font-weight: 600;
+            }
+
+            .btn-section {
+                font-size: 11px;
+                float: right;
+                display: block;
+                padding: 10px 15px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                background: #ebebeb;
+                color: black;
+                text-transform: uppercase;
+
+                &:hover {
+                    color: #fff;
+                    background: #f7d800;
+                }
+            }
+        }
+
+        .medical-facility-body {
+
+            .medical-facility-customize {
+
+                .bg-image1 {
+                    width: 278px;
+                    background: url('../../../assets/medical-facility/logo-bv-viet-duc.jpg');
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    height: 150px;
+                    margin-bottom: 20px;
+                    border: 2px solid gray;
+                }
+
+                .bg-image2 {
+                    width: 278px;
+                    background: url('../../../assets/medical-facility/logo-bv-cr.jpg');
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    height: 150px;
+                    margin-bottom: 20px;
+                    border: 2px solid gray;
+                }
+
+                .bg-image3 {
+                    width: 278px;
+                    background: url('../../../assets/medical-facility/logo-bv108.jpg');
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    height: 150px;
+                    margin-bottom: 20px;
+                    border: 2px solid gray;
+                }
+
+                .bg-image4 {
+                    width: 278px;
+                    background: url('../../../assets/medical-facility/logo-bv-hung-viet.png');
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    height: 150px;
+                    margin-bottom: 20px;
+                    border: 2px solid gray;
+                }
+
+                .bg-image5 {
+                    width: 278px;
+                    background: url('../../../assets/medical-facility/logo-bv-medlatec.png');
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    height: 150px;
+                    margin-bottom: 20px;
+                    border: 2px solid gray;
+                }
+
+                .bg-image6 {
+                    width: 278px;
+                    background: url('../../../assets/medical-facility/logo-bv-diag.png');
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    height: 150px;
+                    margin-bottom: 20px;
+                    border: 2px solid gray;
+                }
+
+                .bg-image7 {
+                    height: 150px;
+                    width: 278px;
+                    background: url('../../../assets/medical-facility/logo-bv-tci.png');
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    margin-bottom: 20px;
+                    border: 2px solid gray;
+                }
+            }
+
+            //reset slick slider css
+            .slick-prev {
+                left: -23px;
+                z-index: 1000;
+                height: 48px;
+                width: 44px;
+                background: #fff;
+                border: 2px solid rgb(66, 209, 23);
+            }
+
+            .slick-prev::before {
+                font-family: FontAwesome;
+                color: rgb(66, 209, 23);
+                font-size: 30px;
+            }
+
+            .slick-next {
+                right: -15px;
+                z-index: 1000;
+                height: 48px;
+                width: 44px;
+                background: #fff;
+                border: 2px solid rgb(66, 209, 23);
+            }
+
+            .slick-next::before {
+                font-family: FontAwesome;
+                color: rgb(66, 209, 23);
+                font-size: 30px;
+            }
+
+            .slick-disabled {
+                display: none !important;
+            }
+        }
+    }
+}

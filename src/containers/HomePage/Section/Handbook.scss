@@ -1,0 +1,157 @@
+.section-handbook {
+    height: 330px;
+    background: white;
+
+    .handbook-container {
+        margin: 0 51px;
+        display: flex;
+        flex-direction: column;
+
+        .handbook-header {
+            height: 60px;
+            margin-bottom: 30px;
+            padding-top: 30px;
+
+            .title-section {
+                font-size: 22px;
+                font-weight: 600;
+            }
+
+            .btn-section {
+                font-size: 11px;
+                float: right;
+                display: block;
+                padding: 10px 15px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                background: #ebebeb;
+                color: black;
+                text-transform: uppercase;
+
+                &:hover {
+                    color: #fff;
+                    background: #f7d800;
+                }
+            }
+        }
+
+        .handbook-body {
+
+            .handbook-customize {
+                display: flex;
+
+                .bg-image1 {
+                    width: 570px;
+                    background: url('../../../assets/handbook/dia-chi-cat-bao-quy-dau-uy-tin-tphcm.png');
+                    background-position: left;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    height: 150px;
+                    margin-bottom: 20px;
+                    border: 2px solid gray;
+
+                    .text1 {
+                        float: right;
+                        color: blue;
+                        font-size: 18px;
+                        padding-top: 18px;
+                        padding-left: 295px;
+                    }
+                }
+
+                .bg-image2 {
+                    width: 570px;
+                    background: url('../../../assets/handbook/kham-nam-khoa-hn-p2.png');
+                    background-position: left;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    height: 150px;
+                    margin-bottom: 20px;
+                    border: 2px solid gray;
+
+                    .text2 {
+                        float: right;
+                        color: blue;
+                        font-size: 18px;
+                        padding-top: 18px;
+                        padding-left: 295px;
+                    }
+                }
+
+                .bg-image3 {
+                    width: 570px;
+                    background: url('../../../assets/handbook/review-kham-tmh-benh-vien-dk-nam-sai-gon.png');
+                    background-position: left;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    height: 150px;
+                    margin-bottom: 20px;
+                    border: 2px solid gray;
+
+                    .text3 {
+                        float: right;
+                        color: blue;
+                        font-size: 18px;
+                        padding-top: 18px;
+                        padding-left: 295px;
+                    }
+                }
+
+                .bg-image4 {
+                    width: 570px;
+                    background: url('../../../assets/handbook/review-khoa-co-xuong-bv-khoa-nam-sai-gon.png');
+                    background-position: left;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    height: 150px;
+                    margin-bottom: 20px;
+                    border: 2px solid gray;
+
+                    .text4 {
+                        float: right;
+                        color: blue;
+                        font-size: 18px;
+                        padding-top: 18px;
+                        padding-left: 295px;
+                    }
+                }
+            }
+
+            //reset slick slider css
+            .slick-prev {
+                left: -23px;
+                z-index: 1000;
+                height: 48px;
+                width: 44px;
+                background: #fff;
+                border: 2px solid rgb(66, 209, 23);
+            }
+
+            .slick-prev::before {
+                font-family: FontAwesome;
+                color: rgb(66, 209, 23);
+                font-size: 30px;
+            }
+
+            .slick-next {
+                right: -15px;
+                z-index: 1000;
+                height: 48px;
+                width: 44px;
+                background: #fff;
+                border: 2px solid rgb(66, 209, 23);
+            }
+
+            .slick-next::before {
+                font-family: FontAwesome;
+                color: rgb(66, 209, 23);
+                font-size: 30px;
+            }
+
+            .slick-disabled {
+                display: none !important;
+            }
+        }
+    }
+}

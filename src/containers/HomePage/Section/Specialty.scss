@@ -1,0 +1,147 @@
+.section-specialty {
+    height: 330px;
+    background: #eff2f2;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0.1));
+
+    .specialty-container {
+        margin: 0 51px;
+        display: flex;
+        flex-direction: column;
+
+        .specialty-header {
+            height: 60px;
+            margin-bottom: 30px;
+            padding-top: 30px;
+
+            .title-section {
+                font-size: 22px;
+                font-weight: 600;
+            }
+
+            .btn-section {
+                font-size: 11px;
+                float: right;
+                display: block;
+                padding: 10px 15px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                background: #ebebeb;
+                color: black;
+                text-transform: uppercase;
+
+                &:hover {
+                    color: #fff;
+                    background: #f7d800;
+                }
+            }
+        }
+
+        .specialty-body {
+
+            .specialty-customize {
+
+                .bg-image1 {
+                    height: 150px;
+                    width: 278px;
+                    background: url('../../../assets/specialty/co-xuong-khop.jpg');
+                    border: 2px solid gray;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-color: #eee;
+                }
+
+                .bg-image2 {
+                    height: 150px;
+                    width: 278px;
+                    background: url('../../../assets/specialty/than-kinh.jpg');
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-color: #eee;
+                    border: 2px solid gray;
+                }
+
+                .bg-image3 {
+                    height: 150px;
+                    width: 278px;
+                    background: url('../../../assets/specialty/tieu-hoa.jpg');
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-color: #eee;
+                    border: 2px solid gray;
+                }
+
+                .bg-image4 {
+                    height: 150px;
+                    width: 278px;
+                    background: url('../../../assets/specialty/tim-mach.jpg');
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-color: #eee;
+                    border: 2px solid gray;
+                }
+
+                .bg-image5 {
+                    height: 150px;
+                    width: 278px;
+                    background: url('../../../assets/specialty/tai-mui-hong.jpg');
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-color: #eee;
+                    border: 2px solid gray;
+                }
+
+                .bg-image6 {
+                    height: 150px;
+                    width: 278px;
+                    background: url('../../../assets/specialty/cot-song.jpg');
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-color: #eee;
+                    border: 2px solid gray;
+                }
+            }
+
+            //reset slick slider css
+            .slick-prev {
+                left: -23px !important;
+                z-index: 1000 !important;
+                height: 48px !important;
+                width: 44px !important;
+                background: #fff !important;
+                border: 2px solid rgb(66, 209, 23) !important;
+            }
+
+            .slick-prev::before {
+                font-family: FontAwesome !important;
+                color: rgb(66, 209, 23) !important;
+                font-size: 30px !important;
+            }
+
+            .slick-next {
+                right: -15px !important;
+                z-index: 1000 !important;
+                height: 48px !important;
+                width: 44px !important;
+                background: #fff !important;
+                border: 2px solid rgb(66, 209, 23) !important;
+            }
+
+            .slick-next::before {
+                font-family: FontAwesome !important;
+                color: rgb(66, 209, 23) !important;
+                font-size: 30px !important;
+            }
+
+            .slick-disabled {
+                display: none !important;
+            }
+        }
+    }
+}

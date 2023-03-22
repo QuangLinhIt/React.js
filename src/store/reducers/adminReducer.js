@@ -1,33 +1,95 @@
 import actionTypes from '../actions/actionTypes';
-
 const initialState = {
-    isLoggedIn: false,
-    adminInfo: null
+    isLoadingGender: false,
+    genders: [],
+    roles: [],
+    positions: [],
+    users: [],
+    topDoctors: [],
+    allDoctors: [],
 }
 
-const appReducer = (state = initialState, action) => {
+const adminReducer = (state = initialState, action) => {
     switch (action.type) {
-        case actionTypes.ADMIN_LOGIN_SUCCESS:
+        //gender
+        case actionTypes.FETCH_GENDER_START:
+            state.isLoadingGender = true;
             return {
                 ...state,
-                isLoggedIn: true,
-                adminInfo: action.adminInfo
             }
-        case actionTypes.ADMIN_LOGIN_FAIL:
+        case actionTypes.FETCH_GENDER_SUCCESS:
+            state.genders = action.data;
+            state.isLoadingGender = false;
             return {
                 ...state,
-                isLoggedIn: false,
-                adminInfo: null
             }
-        case actionTypes.PROCESS_LOGOUT:
+        case actionTypes.FETCH_GENDER_FAILED:
+            state.isLoadingGender = false;
+            state.genders = [];
             return {
                 ...state,
-                isLoggedIn: false,
-                adminInfo: null
             }
+
+        //position
+        case actionTypes.FETCH_POSITION_SUCCESS:
+            state.positions = action.data;
+            return {
+                ...state,
+            }
+        case actionTypes.FETCH_POSITION_FAILED:
+            state.positions = [];
+            return {
+                ...state,
+            }
+
+        //role
+        case actionTypes.FETCH_ROLE_SUCCESS:
+            state.roles = action.data;
+            return {
+                ...state,
+            }
+        case actionTypes.FETCH_ROLE_FAILED:
+            state.roles = [];
+            return {
+                ...state,
+            }
+        //edit-delete
+        case actionTypes.FETCH_ALL_USERS_SUCCESS:
+            state.users = action.users;
+            return {
+                ...state,
+            }
+        case actionTypes.FETCH_ALL_USERS_FAILED:
+            state.users = [];
+            return {
+                ...state,
+            }
+        //load doctor
+        case actionTypes.FETCH_TOP_DOCTORS_SUCCESS:
+            state.topDoctors = action.dataDoctors;
+            return {
+                ...state,
+            }
+        case actionTypes.FETCH_TOP_DOCTORS_FAILED:
+            state.topDoctors = [];
+            return {
+                ...state,
+            }
+        //tao them thong tin bac si
+        case actionTypes.FETCH_ALL_DOCTORS_SUCCESS:
+            state.allDoctors = action.dataDr;
+            return {
+                ...state,
+            }
+        case actionTypes.FETCH_ALL_DOCTORS_FAILED:
+            state.allDoctors = [];
+            return {
+                ...state,
+            }
+
         default:
             return state;
     }
 }
 
-export default appReducer;
+export default adminReducer;
