@@ -6,7 +6,7 @@ import { LANGUAGES } from '../../../utils';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import { withRouter } from 'react-router';
 
 import * as actions from '../../../store/actions';
 class OutStandingDoctor extends Component {
@@ -28,7 +28,10 @@ class OutStandingDoctor extends Component {
     componentDidMount() {
         this.props.loadTopDoctors();
     }
-
+    handleViewDetailDoctor = (doctor) => {
+        console.log('view infor', doctor);
+        this.props.history.push(`/users/${doctor.id}`);
+    }
     render() {
         let settings = {
             dots: false,
@@ -60,7 +63,7 @@ class OutStandingDoctor extends Component {
                                 let nameVi = `${item.positionData.valueVi}, ${item.lastName} ${item.firstName}`;
                                 let nameEn = `${item.positionData.valueEn}, ${item.firstName} ${item.lastName}`;
                                 return (
-                                    <div className="OutStandingDoctor-customize" key={index}>
+                                    <div className="OutStandingDoctor-customize" key={index} onClick={() => this.handleViewDetailDoctor(item)}>
                                         <div className="bg-image edit-image"
                                             style={{ backgroundImage: `url(${imageBase64})` }}
                                         />
@@ -91,4 +94,4 @@ const mapDispatchToProps = dispatch => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(OutStandingDoctor);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(OutStandingDoctor));
