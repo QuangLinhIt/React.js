@@ -3,8 +3,7 @@ import { connect } from "react-redux";
 
 class DetailDoctor extends Component {
     render() {
-
-        const { DetailDoctorMenuPath, isLoggedIn } = this.props;
+        console.log(this.props.match.params.id);
         return (
             <div>detail doctor</div>
         );
